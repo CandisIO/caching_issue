@@ -34,4 +34,4 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64,linux/arm64
           context: .
-          tags: "${{ steps.ecr-login.outputs.registry }}/caching_issues:latest, ${{ steps.ecr-login.outputs.registry }}/caching_issues:${{ github.sha }}"
+          tags: "${{ secrets.DOCKER_USERNAME }}/caching_issues:latest, ${{ secrets.DOCKER_USERNAME }}/caching_issues:${{ github.sha }}"
