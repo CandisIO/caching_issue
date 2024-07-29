@@ -25,13 +25,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Read the env file and expose the environment variables inside the gh action job
-      - name: Environment - Load the env variables from the env file
-        run: cat ${{ env.ENV_FILE }} >> $GITHUB_ENV
-
-      - name: Download all the required jar files
-        run: make jars-get
-
       - name: AWS - Configure credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
