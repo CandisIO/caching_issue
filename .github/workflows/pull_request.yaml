@@ -12,7 +12,5 @@ jobs:
   build:
     uses: ./.github/workflows/deploy.yaml
     secrets:
-      PUBLISH_PACKAGES: ${{ secrets.PUBLISH_PACKAGES }}
-      AWS_ECR_ACCESS_KEY_ID: ${{ secrets.AWS_ECR_ACCESS_KEY_ID }}
-      AWS_ECR_SECRET_ACCESS_KEY: ${{ secrets.AWS_ECR_SECRET_ACCESS_KEY }}
-      AWS_ECR_REGION: ${{ secrets.AWS_ECR_REGION }}
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
