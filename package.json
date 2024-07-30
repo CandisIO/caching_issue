@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CandisIO/caching_issue/issues"
   },
-  "homepage": "https://github.com/CandisIO/caching_issue#readme"
+  "homepage": "https://github.com/CandisIO/caching_issue#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
